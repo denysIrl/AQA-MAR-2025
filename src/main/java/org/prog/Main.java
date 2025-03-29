@@ -14,17 +14,21 @@ public class Main {
         car2.color = "blue";
         car3.color = "green";
 
+        car1.owner = "Ivan";
+        car2.owner = "Kristofer";
+        car3.owner = "Oleg";
+
         car1.milage = 10;
 
-        carRentService.rantThatDoesntWork(car1.milage, 20000);
-        System.out.println("car1 milage " + car1.milage);
+//       carRentService.rantThatDoesntWork(car1.milage, 20000);
+//       System.out.println("car1 milage " + car1.milage);
 
-        carRentService.rentCar(car1, 200);
-        System.out.println("car1 milage " + car1.milage);
+//        carRentService.rentCar(car1, 200);
+//        System.out.println("car1 milage " + car1.milage);
 
-//        car1.goTo("Kyiv");
-//        car2.goTo("Odessa");
-//        car3.goTo("Warsaw");
+        car1.goTo("Kyiv");
+        car2.goTo("Odessa");
+        car3.goTo("Warsaw");
 //
 //        carService.paintCar(car1, "yellow");
 //        carService.paintCar(car2, "purple");

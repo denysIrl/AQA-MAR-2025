@@ -6,10 +6,11 @@ public class Car {
 
     public Engine engine;
     public String color;
+    public String owner;
     public int milage;
 
     public void goTo(String destination) {
-        System.out.println(color + " car goes to " + destination);
+        System.out.println(color + " belonging to " + owner + " goes to " + destination);
     }
 
     public void fuelCarWithGasoline(String gasType, int liters) {
