@@ -8,20 +8,25 @@ public class Car implements ICar {
     public Integer fuelLevel;
     public Engine engine;
     public String color;
+    public String owner;
     public int milage;
 
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Car) {
             Car c = (Car) obj;
-            return this.color.equals(c.color);
+            return this.color.equals(c.color) && this.owner.equals(c.owner);
         }
         return false;
     }
 
     @Override
     public int hashCode() {
-        return this.color.hashCode();
+        int result = 1;
+        result = 31 * result + color.hashCode();
+        result = 31 * result + owner.hashCode();
+        return result;
+
     }
 
     public void goTo(String destination) {
