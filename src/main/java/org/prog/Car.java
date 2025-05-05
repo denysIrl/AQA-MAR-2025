@@ -22,10 +22,8 @@ public class Car implements ICar {
 
     @Override
     public int hashCode() {
-        int result = 1;
-        result = 31 * result + color.hashCode();
-        result = 31 * result + owner.hashCode();
-        return result;
+        String s = color + owner;
+        return s.hashCode();
 
     }
 
