@@ -12,7 +12,6 @@ public class Car implements ICar {
     public Engine engine;
     public String color;
     public int milage;
-
 //    public Set<String> drivers = new HashSet<>();
 
     @Override
@@ -67,4 +66,5 @@ public class Car implements ICar {
     public void turnRight() {
         System.out.println("Car turns right");
     }
+
 }

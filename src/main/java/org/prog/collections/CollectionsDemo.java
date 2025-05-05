@@ -66,9 +66,9 @@ public class CollectionsDemo {
 //        cars.add(car4);
 //        cars.add(car5);
 //
-//        for (Car car : cars) {
-//            if (car.drivers.contains("John")) {
-//                System.out.println("This is John's car!");
+ //        for (Car car : cars) {
+ //           if (car.drivers.contains("John")) {
+ //              System.out.println("This is John's car!");
 //            }
 //        }
     }
