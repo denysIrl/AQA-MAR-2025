@@ -27,7 +27,7 @@ public class Main {
         System.out.println(check4);
 
 
-        //hashCode() машин
+
         System.out.println(mazda.hashCode());
         System.out.println(opel.hashCode());
         System.out.println(myCar.hashCode());
